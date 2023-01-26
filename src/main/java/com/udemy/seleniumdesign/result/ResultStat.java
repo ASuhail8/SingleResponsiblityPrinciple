@@ -1,10 +1,11 @@
-package com.udemy.seleniumdesign;
+package com.udemy.seleniumdesign.result;
 
+import com.udemy.seleniumdesign.common.AbstractComponents;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ResultStat extends AbstractComponents{
+public class ResultStat extends AbstractComponents {
 
     @FindBy(id="result-stats")
     private WebElement stats;
@@ -20,6 +21,6 @@ public class ResultStat extends AbstractComponents{
 
     @Override
     public boolean isDisplayed() {
-        return wait.until((d) -> this.stats.isDisplayed());
+        return this.wait.until((d) -> this.stats.isDisplayed());
     }
 }

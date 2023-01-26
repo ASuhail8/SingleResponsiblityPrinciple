@@ -1,13 +1,9 @@
-package com.udemy.seleniumdesign;
+package com.udemy.seleniumdesign.common;
 
+import com.udemy.seleniumdesign.common.AbstractComponents;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class SearchWidget extends AbstractComponents {
 
@@ -25,6 +21,6 @@ public class SearchWidget extends AbstractComponents {
 
     @Override
     public boolean isDisplayed() {
-        return wait.until((d) -> this.searchBox.isDisplayed());
+        return this.wait.until((d) -> this.searchBox.isDisplayed());
     }
 }

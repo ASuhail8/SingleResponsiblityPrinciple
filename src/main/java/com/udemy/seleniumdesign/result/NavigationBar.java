@@ -1,5 +1,6 @@
-package com.udemy.seleniumdesign;
+package com.udemy.seleniumdesign.result;
 
+import com.udemy.seleniumdesign.common.AbstractComponents;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,6 +30,6 @@ public class NavigationBar extends AbstractComponents {
 
     @Override
     public boolean isDisplayed() {
-        return wait.until((d) -> this.bar.isDisplayed());
+        return this.wait.until((d) -> this.bar.isDisplayed());
     }
 }

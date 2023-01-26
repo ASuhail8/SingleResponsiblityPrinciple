@@ -1,5 +1,7 @@
-package com.udemy.seleniumdesign;
+package com.udemy.seleniumdesign.main;
 
+import com.udemy.seleniumdesign.common.SearchSuggestion;
+import com.udemy.seleniumdesign.common.SearchWidget;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -11,12 +13,16 @@ public class GoogleMainPage {
 
     public GoogleMainPage(final WebDriver driver){
         this.driver = driver;
-        this.searchWidget = new SearchWidget(driver);
+        this.searchWidget = PageFactory.initElements(driver,SearchWidget.class);
         this.searchSuggestion = PageFactory.initElements(driver, SearchSuggestion.class);
     }
 
     public SearchSuggestion getSearchSuggestion() {
         return searchSuggestion;
+    }
+
+    public void goTo(){
+        this.driver.get("https://www.google.com");
     }
 
     public SearchWidget getSearchWidget() {
