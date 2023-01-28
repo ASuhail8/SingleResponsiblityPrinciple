@@ -1,7 +1,7 @@
-package com.udemy.seleniumdesign.main;
+package com.udemy.seleniumdesign.SRP.main;
 
-import com.udemy.seleniumdesign.common.SearchSuggestion;
-import com.udemy.seleniumdesign.common.SearchWidget;
+import com.udemy.seleniumdesign.SRP.common.SearchSuggestion;
+import com.udemy.seleniumdesign.SRP.common.SearchWidget;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 

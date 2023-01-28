@@ -1,6 +1,6 @@
-package com.udemy.seleniumdesign.result;
+package com.udemy.seleniumdesign.SRP.result;
 
-import com.udemy.seleniumdesign.common.AbstractComponents;
+import com.udemy.seleniumdesign.SRP.common.AbstractComponents;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

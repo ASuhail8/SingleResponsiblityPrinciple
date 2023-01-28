@@ -1,7 +1,7 @@
 package com.udemy.seleniumdesign.tests;
 
-import com.udemy.seleniumdesign.main.GoogleMainPage;
-import com.udemy.seleniumdesign.result.GoogleResultPage;
+import com.udemy.seleniumdesign.SRP.main.GoogleMainPage;
+import com.udemy.seleniumdesign.SRP.result.GoogleResultPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
